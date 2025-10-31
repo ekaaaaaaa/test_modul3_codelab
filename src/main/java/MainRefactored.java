@@ -9,8 +9,12 @@ import java.util.Scanner;
 
 public class MainRefactored {
     /** Basis (β) bilangan biner, yaitu 2. */
-    public static final int BETA = 2;
-    /** Scanner global untuk input pengguna. */
+    public static final int BETA;
+
+    static {
+        BETA = 2;
+    }
+
     public static final Scanner scanner = new Scanner(System.in);
 
     /**
@@ -20,16 +24,15 @@ public class MainRefactored {
      * @param args argumen baris perintah (tidak digunakan)
      */
     public static void main(String[] args) {
-        while (true) {
-            String biner = inputBiner.inputBiner();
+        do {
+            String biner = inputBiner.inputB();
             int[] koefisien = koenfisien.getKoefisien(biner);
             tampilanKoefisien.tampilkanKoefisien(koefisien);
 
             int hasil = perhitungan.prosesHorner(koefisien);
             hasilAhir.tampilkanHasil(biner, hasil);
 
-            if (!pengulangan.lanjutkan()) break;
-        }
+        } while (pengulangan.lanjutkan());
         System.out.println("Program selesai. Terima kasih!");
     }
 

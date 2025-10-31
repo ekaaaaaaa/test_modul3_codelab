@@ -2,7 +2,6 @@
  * Kelas untuk mengubah bilangan biner menjadi array koefisien.
  */
 public class koenfisien {
-    // 2️⃣ Refactor: Pisahkan pengambilan koefisien
     static int[] getKoefisien(String biner) {
         int n = biner.length();
         int[] a = new int[n];
