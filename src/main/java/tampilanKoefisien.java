@@ -2,6 +2,7 @@
  * Kelas untuk menampilkan koefisien dan proses konversi.
  */
 public class tampilanKoefisien {
+
     static void tampilkanKoefisien(int[] a) {
         System.out.println("\n--- Proses Konversi Biner ke Desimal (Metode Horner) ---");
         System.out.println("Basis (β) = " + MainRefactored.BETA);

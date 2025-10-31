@@ -3,7 +3,7 @@
  */
 public class inputBiner {
     static String inputB() {
-        System.out.print("Masukkan bilangan biner: ");
+        System.out.print("Masukkan bilangan Biner: ");
         return MainRefactored.scanner.nextLine();
     }
 }

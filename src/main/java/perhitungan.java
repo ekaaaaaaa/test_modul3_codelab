@@ -2,6 +2,7 @@
  * Kelas yang menangani proses perhitungan konversi menggunakan metode Horner.
  */
 public class perhitungan {
+
     static int prosesHorner(int[] a) {
         int n = a.length - 1;
         int b = a[n];

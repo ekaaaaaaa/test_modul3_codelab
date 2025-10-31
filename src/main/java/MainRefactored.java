@@ -17,12 +17,6 @@ public class MainRefactored {
 
     public static final Scanner scanner = new Scanner(System.in);
 
-    /**
-     * Metode utama program.
-     * Mengatur alur kerja dari input, perhitungan hingga output hasil konversi.
-     *
-     * @param args argumen baris perintah (tidak digunakan)
-     */
     public static void main(String[] args) {
         do {
             String biner = inputBiner.inputB();
